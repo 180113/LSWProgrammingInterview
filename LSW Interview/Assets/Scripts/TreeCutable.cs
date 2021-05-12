@@ -8,6 +8,9 @@ public class TreeCutable : ToolHit
     [SerializeField] int dropAmount =5;
     [SerializeField]float spread = 0.7f;
 
+    [SerializeField] Item item ;
+    [SerializeField] int itemCountInOneDrop = 1;
+
     public override void Hit()
     {
         while(dropAmount>0){
@@ -16,8 +19,7 @@ public class TreeCutable : ToolHit
             Vector3 position = transform.position;
             position.x += spread* Random.value - spread/2;
             position.y += spread* Random.value - spread/2;
-            GameObject go = Instantiate(itemDrop);
-            go.transform.position = position;
+            ItemSpawnManager.instance.SpawnItem(position, item, itemCountInOneDrop);
         }
 
         Destroy(gameObject);

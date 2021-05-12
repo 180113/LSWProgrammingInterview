@@ -15,3 +15,4 @@ MonoBehaviour:
   Name: Sword
   stackable: 0
   Icon: {fileID: 21300000, guid: c88d77e015152c44ba60be190a54c393, type: 3}
+  price: 100

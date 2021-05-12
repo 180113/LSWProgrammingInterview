@@ -9,6 +9,25 @@ public class ItemSlot {
     public Item item;
     public int count;
 
+    public void Copy (ItemSlot slot) {
+        item = slot.item;
+        count = slot.count;
+
+    }
+    public void Set (Item _item, int _count) {
+        Debug.Log("Item Set");
+        Debug.Log($"_item {_item}");
+        item = _item;
+        Debug.Log($"item {item}");
+        count = _count;
+
+    }
+
+    public void Clear () {
+        item = null;
+        count = 0;
+    }
+
 }
 
 [CreateAssetMenu (menuName = "Data/Itemcontainer")]
