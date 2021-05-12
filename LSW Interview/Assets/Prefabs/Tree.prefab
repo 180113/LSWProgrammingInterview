@@ -128,4 +128,4 @@ MonoBehaviour:
   dropAmount: 25
   spread: 0.7
   item: {fileID: 11400000, guid: 53d8e936105b0a54faff093bb2078ab3, type: 2}
-  itemCountInOneDrop: 1
+  itemCountInOneDrop: 3

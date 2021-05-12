@@ -3224,6 +3224,12 @@ TextureImporter:
   - first:
       213: 5649468536085351866
     second: TreeLog
+  - first:
+      213: 7594525048525668793
+    second: ShopStall
+  - first:
+      213: 5460641065583701521
+    second: SellBox
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -19085,9 +19091,9 @@ TextureImporter:
       name: Overworld_751
       rect:
         serializedVersion: 2
-        x: 352
+        x: 351
         y: 224
-        width: 16
+        width: 17
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -25860,6 +25866,48 @@ TextureImporter:
       bones: []
       spriteID: abd0d1f83b1f66e40800000000000000
       internalID: 5649468536085351866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopStall
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 134
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1cd2b4b4c256960800000000000000
+      internalID: 7594525048525668793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SellBox
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 225
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ee6001e1818cb40800000000000000
+      internalID: 5460641065583701521
       vertices: []
       indices: 
       edges: []

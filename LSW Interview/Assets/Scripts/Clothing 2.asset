@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5220ac80e7837f54e96cae29cbf5d306, type: 3}
+  m_Name: Clothing 2
+  m_EditorClassIdentifier: 
+  Name: Chain Jacket
+  stackable: 0
+  equipable: 1
+  Icon: {fileID: -7214210146444408205, guid: f037e7039c73bb345b5ada84df2b0a51, type: 3}
+  price: 500

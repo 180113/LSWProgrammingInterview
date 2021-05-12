@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class ItemToolbarPanel : ItemPanel {
     [SerializeField] ToolBarController toolBarController;
+    [SerializeField] bool ignoreScroll;
 
     void Start () {
         Init ();
+        
+
         toolBarController.onChange += Highlight;
+        
         Highlight (0);
     }
     public override void OnClick (int id) {

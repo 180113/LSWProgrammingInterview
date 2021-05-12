@@ -8,6 +8,10 @@ public class CharacterController2D : MonoBehaviour {
     [SerializeField] float speed = 2f;
     Vector2 movementVector;
     public Vector2 lastMovementVector;
+
+    public bool purpleArmor;
+
+    public bool chainArmor;
     Animator animator;
     public bool moving;
 
@@ -28,7 +32,7 @@ public class CharacterController2D : MonoBehaviour {
         animator.SetFloat ("vertical", vertical);
 
         moving = horizontal != 0 || vertical != 0;
-        animator.SetBool("moving", moving);
+        animator.SetBool ("moving", moving);
         if (horizontal != 0 || vertical != 0) {
             lastMovementVector = new Vector2 (horizontal, vertical).normalized;
         }
@@ -38,4 +42,26 @@ public class CharacterController2D : MonoBehaviour {
     void Move () {
         rigidbody2D.velocity = movementVector * speed * Time.deltaTime;
     }
+
+    public void EquipPurple () {
+        purpleArmor = true;
+        chainArmor = false;
+        animator.SetBool ("Purple", purpleArmor);
+        animator.SetBool ("Chain", chainArmor);
+    }
+
+    public void EquipChain () {
+        chainArmor = true;
+        purpleArmor = false;
+        animator.SetBool ("Chain", chainArmor);
+        animator.SetBool ("Purple", purpleArmor);
+    }
+
+    public void Deequip () {
+        chainArmor = false;
+        purpleArmor = false;
+        animator.SetBool ("Chain", chainArmor);
+        animator.SetBool ("Purple", purpleArmor);
+    }
+
 }
