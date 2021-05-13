@@ -57,5 +57,12 @@ public class ItemContainer : ScriptableObject {
             }
         }
     }
+    public void Clear(){
+        for (int i = 0; i < slots.Count; i++)
+        {
+            slots[i].item =null;
+            slots[i].count = 0;
+        }
+    }
 
 }

@@ -14,6 +14,7 @@ public class CharacterController2D : MonoBehaviour {
     public bool chainArmor;
     Animator animator;
     public bool moving;
+    [SerializeField] GameObject EquipmentUI;
 
     void Awake () {
         rigidbody2D = GetComponent<Rigidbody2D> ();
@@ -23,6 +24,11 @@ public class CharacterController2D : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+
+        if (Input.GetKeyDown (KeyCode.E)) {
+
+            EquipmentUI.SetActive (!EquipmentUI.activeInHierarchy);
+        }
         float horizontal = Input.GetAxisRaw ("Horizontal");
         float vertical = Input.GetAxisRaw ("Vertical");
 
